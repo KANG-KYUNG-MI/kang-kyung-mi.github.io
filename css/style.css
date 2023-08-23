@@ -56,6 +56,20 @@ button:focus {
     outline: 1px solid var(--color-accent)
 }
 
+.section{
+    padding: 4rem;
+    text-align: center;
+}
+
+.title{
+   font-size: 2.5rem;
+   margin:1rem 0;
+}
+
+.description{
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
 /* header */
 .header{
     background-color: var(--color-primary);
@@ -138,3 +152,27 @@ padding: 8px 16px;
     outline: 2px solid var(--color-accent)
 }
 
+/* about-me */
+/* .about_me{
+    text-align: center;
+    padding: 3rem;
+}
+
+.about_me_description{
+    padding: 1rem 3rem;
+}
+
+.about_me_menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.fa-brands fa-js{
+    width: 30px;
+}
+.about_me_img{
+    width: 60px;
+}
+ */

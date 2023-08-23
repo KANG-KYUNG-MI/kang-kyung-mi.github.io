@@ -11,7 +11,7 @@
     /* Colors */
     --color-white: #ffffff;
     --color-black: #000000;
-    --color-blue: #688ef0d3;
+    --color-blue: #06dbf7d3;
     --color-orange: #fd6413;
     --color-gray: #1b1e26;
 }
@@ -101,3 +101,40 @@ padding: 8px 16px;
     border: 1px solid var(--color-accent);
     border-radius: 5px;
 }
+
+#home{
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    padding: 5rem 1rem;
+    padding-top: 7rem;
+    text-align: center;
+}
+.home_img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 3px solid var(--color-accent);
+}
+.home_title--strong{
+    color: var(--color-accent);
+    font-size: 1.8rem;
+}
+.home_description{
+    font-size: 1.3rem;
+}
+.home_contact{
+
+    display:inline-block ;
+    background-color: var(--color-accent);
+    margin: 2rem;
+    padding: .5rem 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.home_contact:hover{
+    background-color: transparent;
+    color: var(--color-text);
+    outline: 2px solid var(--color-accent)
+}
+

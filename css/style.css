@@ -14,6 +14,7 @@
     --color-blue: #06dbf7d3;
     --color-orange: #fd6413;
     --color-gray: #1b1e26;
+    --color-yellow: #f9d10a;
 }
 
 * {
@@ -27,9 +28,11 @@ body {
 
 h1,
 h2,
-h3, p, ul{
+h3,
+p,
+ul {
     margin: 0;
-    
+
 }
 
 ul {
@@ -56,25 +59,26 @@ button:focus {
     outline: 1px solid var(--color-accent)
 }
 
-.section{
+.section {
     padding: 4rem;
     text-align: center;
 }
 
-.title{
-   font-size: 2.5rem;
-   margin:1rem 0;
+.title {
+    font-size: 2.5rem;
+    margin: 1rem 0;
 }
 
-.description{
+.description {
     font-size: 1.5rem;
     margin: 0.5rem 0;
 }
+
 /* header */
-.header{
+.header {
     background-color: var(--color-primary);
     position: fixed;
-    top:0;
+    top: 0;
     width: 100%;
     padding: 1rem;
     display: flex;
@@ -82,97 +86,172 @@ button:focus {
     align-items: center;
 }
 
-.header_logo{
+.header_logo {
 
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.header_logo_img{
-    width:36px;
+.header_logo_img {
+    width: 36px;
     height: 36px;
 }
 
-.header_logo_title{
-font-size: 1.8rem;
+.header_logo_title {
+    font-size: 1.8rem;
 }
 
-.header_menu{
+.header_menu {
     display: flex;
-    gap:4px;
+    gap: 4px;
 }
 
-.header_menu_item{
-padding: 8px 16px;
+.header_menu_item {
+    padding: 8px 16px;
 }
 
-.header_menu_item:hover{
+.header_menu_item:hover {
     border-bottom: 1px solid var(--color-accent);
 }
 
-.header_menu_item.active{
+.header_menu_item.active {
     border: 1px solid var(--color-accent);
     border-radius: 5px;
 }
 
-#home{
+#home {
     background-color: var(--color-primary);
     color: var(--color-text);
     padding: 5rem 1rem;
     padding-top: 7rem;
     text-align: center;
 }
-.home_img{
+
+.home_img {
     width: 250px;
     height: 250px;
     object-fit: cover;
     border-radius: 100%;
     border: 3px solid var(--color-accent);
 }
-.home_title--strong{
+
+.home_title--strong {
     color: var(--color-accent);
     font-size: 1.8rem;
 }
-.home_description{
+
+.home_description {
     font-size: 1.3rem;
 }
-.home_contact{
 
-    display:inline-block ;
+.home_contact {
+
+    display: inline-block;
     background-color: var(--color-accent);
     margin: 2rem;
     padding: .5rem 1rem;
     font-weight: bold;
     border-radius: 5px;
 }
-.home_contact:hover{
+
+.home_contact:hover {
     background-color: transparent;
     color: var(--color-text);
     outline: 2px solid var(--color-accent)
 }
 
 /* about-me */
-/* .about_me{
-    text-align: center;
-    padding: 3rem;
-}
-
-.about_me_description{
-    padding: 1rem 3rem;
-}
-
-.about_me_menu{
+.majors {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 2.5rem 0;
+}
+
+.major {
+    background-color: var(--color-primary-variant);
+    margin: 2rem;
+    padding: 2rem 2rem;
+    color: var(--color-text);
+}
+
+.major_icon1 {
+    font-size: 23rem;
+    color: var(--color-yellow);
+}
+
+.major_icon1:hover {
+    transform: rotate(-15deg) scale(1.1);
+}
+
+.major_icon2 {
+    width: 20rem;
+    height: 21.5rem;
+}
+
+.major_icon2:hover {
+    transform: rotate(-15deg) scale(1.1);
+}
+
+.major_icon3 {
+    width: 20rem;
+    height: 21.5rem;
+}
+
+.major_icon3:hover {
+    transform: rotate(-15deg) scale(1.1);
+}
+
+/* skills */
+
+#skills {
+    background-color: var(--color-primary-variant);
+    color: var(--color-text);
 
 }
 
-.fa-brands fa-js{
-    width: 30px;
+.skills {
+    display: grid;
+
+    grid-template-columns: 6fr;
+    margin: 2rem 3rem;
+    border-radius: 10px;
+    overflow: hidden;
+
+
 }
-.about_me_img{
-    width: 60px;
+
+.skills_title {
+    color: var(--color-accent);
+    margin: 1rem 0;
+    font-size: 1.2rem;
 }
- */
+
+.skills_coding {
+    grid-row: span 2;
+    padding: 1rem;
+    background-color: var(--color-primary);
+}
+
+.bar {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.5rem;
+}
+
+.bar_metaData{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar_bg{
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-primary-variant);
+}
+.bar_value{
+height: 3px;
+background-color: var(--color-accent);
+}

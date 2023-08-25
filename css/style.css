@@ -241,17 +241,84 @@ button:focus {
     gap: 0.5rem;
 }
 
-.bar_metaData{
+.bar_metaData {
     display: flex;
     justify-content: space-between;
 }
 
-.bar_bg{
+.bar_bg {
     width: 100%;
     height: 3px;
     background-color: var(--color-primary-variant);
 }
-.bar_value{
-height: 3px;
-background-color: var(--color-accent);
+
+.bar_value {
+    height: 3px;
+    background-color: var(--color-accent);
+}
+
+/* work */
+#work {
+    background-color: var(--color-primary);
+    color: var(--color-text)
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem;
+    gap: 2rem;
+}
+
+.category {
+    position: relative;
+    color: var(--color-text);
+    font-size: 1.1rem;
+    padding: 0.5rem 3rem;
+    border-radius: 4px;
+    border: 1px solid var(--color-accent);
+    cursor: pointer;
+}
+
+.category_selected{
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+}
+
+.category_count{
+position: absolute;
+top: -20px;
+right: 16px;
+    width: 28px;
+    height: 28px;
+    background-color: var(--color-accent-variant);
+    color:var(--color-text);
+}
+
+.category--selected .category_count,
+.category:hover .category_count{
+    opacity:1;
+    top:0;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+.project{
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.project_img{
+    width: 270px;
+    height: 180px;
+    margin: 1rem;
+}
+
+.project_metadata{
+    position: absolute;
+    top
 }

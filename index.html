@@ -24,7 +24,7 @@
 
 
     <link rel="stylesheet" href="css/style.css">
-    <script src="src/main.js" defer></script>
+    <script src="./src/main.js" defer></script>
 </head>
 
 <body>
@@ -44,16 +44,20 @@
                 <li><a class='header_menu_item' href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <button class='header_toggle' aria-label='navigation menu toggle'><i class="fa-solid fa-bars"></i></button>
     </header>
 
     <main>
         <!-- Home -->
-        <section id="home">
-            <img class='home_img' src="images/K-ETA__2_-removebg-preview (1).png" alt="Chloe's profile">
-            <h2 class='home_title'>Hello, <br> I&#39;m <strong class='home_title--strong'>Dream Coder</strong>, Chloe
-            </h2>
-            <p class='home_description'>A frontend developer in Malmoe, Sweden</p>
-            <a class='home_contact' href="#contact">Contact Me</a>
+        <section class='home' id="home">
+            <div class="home-container">
+                <img class='home_img' src="images/K-ETA__2_-removebg-preview (1).png" alt="Chloe's profile">
+                <h2 class='home_title'>Hello, <br> I&#39;m <strong class='home_title--strong'>Dream Coder</strong>,
+                    Chloe
+                </h2>
+                <p class='home_description'>A frontend developer in Malmoe, Sweden</p>
+                <a class='home_contact' href="#contact">Contact Me</a>
+            </div>
         </section>
 
         <!-- About me -->
@@ -210,7 +214,7 @@
                     </li>
                     <li class='project'>
                         <a href="https://kang-kyung-mi.github.io/FE22-js2-slutprojekt-Kyung-Mi-Kang/" target='_blank'>
-                            <img class='project_img' src="images/pf6.png" alt="project1">
+                            <img class='project_img' src="images/pf5.png" alt="project1">
                             <div class='project_metadata'>
                                 <h3 class='project_title'>Project #6</h3>
                                 <p>Game</p>
@@ -279,11 +283,11 @@
 
         </section>
         <!-- Arrow up -->
-        
+
 
         <aside class='arrow-up'>
-            <a href="#home" title='back to top'>   
-             <i class="fa-solid fa-arrow-up"></i>
+            <a href="#home" title='back to top'>
+                <i class="fa-solid fa-arrow-up"></i>
             </a>
         </aside>
     </main>
@@ -307,7 +311,7 @@
             </ul>
 
         </div>
-       
+
     </footer>
 
 </body>

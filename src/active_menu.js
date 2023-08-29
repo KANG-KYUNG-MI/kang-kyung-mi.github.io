@@ -8,7 +8,10 @@ const navItems = sectionIds.map((id) => document.querySelector(`[href="${id}"]`)
 const visibleSections = sectionIds.map(()=> false);
 console.log(visibleSections);
 
-const options = {};
+const options = {
+    rootMargin:'-20px 8px 0px 0px',
+    threshold:[0, 0.98  ],
+};
 const observer = new IntersectionObserver(observerCallback, options);
 sections.forEach((section) => observer.observe(section));
 

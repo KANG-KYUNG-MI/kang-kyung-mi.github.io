@@ -11,7 +11,7 @@ categories.addEventListener('click', (event) => {
   if (filter == null) {
     return;
   }
-  //active menu - button's selected done not work.
+  //active menu - button's 'selected' done not work!!!!!!
   const active = document.querySelector('.category--selected');
   active.classList.remove('category--selected');
   event.target.classList.add('category--selected');

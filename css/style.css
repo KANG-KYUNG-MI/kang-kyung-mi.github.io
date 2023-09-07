@@ -520,6 +520,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .testimonial_img {
+    width: 15rem;
     border-radius: 100%;
     box-shadow: 0 10px 8px rgb(0, 0, 0, 0.24);
 }

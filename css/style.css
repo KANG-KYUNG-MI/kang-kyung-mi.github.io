@@ -257,21 +257,27 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 /* about-me */
 .majors {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 1rem;
-    margin: 2rem 5rem;
+    margin: 2rem 1rem;
 }
 
 .major {
     background-color: var(--color-primary-variant);
-    margin: 2rem;
-    padding: 2rem 2rem;
+    margin: 1rem;
+    padding: 1rem 1rem;
     color: var(--color-text);
 }
 
+
 .major_icon1 {
-    font-size: 23rem;
-    color: var(--color-yellow);
+    width: 20rem;
+    height: 21.5rem;
+}
+
+.majot_icon1{
+    width: 20rem;
+    height: 21.5rem;
 }
 
 .major_icon1:hover {
@@ -295,6 +301,17 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .major_icon3:hover {
     transform: rotate(-15deg) scale(1.1);
 }
+
+
+.major_icon4 {
+    width: 20rem;
+    height: 21.5rem;
+}
+
+.major_icon4:hover {
+    transform: rotate(-15deg) scale(1.1);
+}
+
 
 .job {
     display: flex;
